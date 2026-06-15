@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="search-box">
+      <i class="fa-solid fa-location-dot"></i>
+      <input type="text" placeholder="Search city..." id="cityInput">
+      <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="location-row" id="locationRow">
+      <i class="fa-solid fa-map-pin"></i>
+      <span class="city-name" id="cityName"></span>
+      <span class="country-tag" id="countryTag"></span>
+    </div>
+    <div class="date-time" id="dateTime"></div>
+
+    <div class="not-found" id="notFound">
+      <img src="https://cdn-icons-png.flaticon.com/512/4076/4076478.png" alt="Not Found">
+      <span>City not found!</span>
+      <p>Please check the spelling and try again.</p>
+    </div>
+
+    <div class="weather-box" id="weatherBox">
+      <img src="" alt="Weather" id="weatherImg">
+      <p class="temperature" id="temperature"></p>
+      <p class="description" id="description"></p>
+      <p class="feels-like" id="feelsLike"></p>
+    </div>
+
+    <div class="divider" id="divider"></div>
+
+    <div class="weather-details" id="weatherDetails">
+      <div class="detail-card humidity">
+        <i class="fa-solid fa-droplet"></i>
+        <div>
+          <div class="detail-label">Humidity</div>
+          <div class="detail-value" id="humidity"></div>
+        </div>
+      </div>
+      <div class="detail-card wind">
+        <i class="fa-solid fa-wind"></i>
+        <div>
+          <div class="detail-label">Wind</div>
+          <div class="detail-value" id="windSpeed"></div>
+        </div>
+      </div>
+      <div class="detail-card pressure">
+        <i class="fa-solid fa-gauge"></i>
+        <div>
+          <div class="detail-label">Pressure</div>
+          <div class="detail-value" id="pressure"></div>
+        </div>
+      </div>
+      <div class="detail-card visibility">
+        <i class="fa-solid fa-eye"></i>
+        <div>
+          <div class="detail-label">Visibility</div>
+          <div class="detail-value" id="visibility"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="app(1).js"></script>
+</body>
+</html>
